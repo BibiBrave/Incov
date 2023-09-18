@@ -1,167 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <title>InCov - Informações do Covid</title>
-   
+    <link rel="stylesheet" type="text/css" href="/_assets/css/style.css">
 </head>
+
 <body>
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <link rel="stylesheet" href="../_assets/css/time.css">
-          <link rel="stylesheet" href="../_assets/css/bootstrap.min.css">
-          <link rel="stylesheet" href="../_assets/css/fonts.css">
-          <span class="fs-4">InCov</span>
-        </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="../index.html" class="nav-link " aria-current="page">HOME</a></li>
-            <li class="nav-item"><a href="./relatos.html" class="nav-link">RELATOS</a></li>
-            <li class="nav-item"><a href="./vacina.html" class="nav-link active">VACINA</a></li>
-            <li class="nav-item"><a href="./equipe.html" class="nav-link">EQUIPE</a></li>
-            <li class="nav-item"><a href="./contatos.html" class="nav-link">CONTATO</a></li>
-          </ul>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <link rel="stylesheet" href="../_assets/css/time.css">
+                <link rel="stylesheet" href="../_assets/css/bootstrap.min.css">
+                <link rel="stylesheet" href="../_assets/css/fonts.css">
+                <div class="logo_animation" data-tilt>
+                    <img src="../_assets/img/logo.png" style="height: 150px; width: auto ;" alt="Logo">
+                </div>
+            </a>
+            <ul class="nav nav-pills" style="margin-top: 50px ;">
+                <li class="nav-item"><a href="../index.html" class="nav-link " aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="./relatos.html" class="nav-link">RELATOS</a></li>
+                <li class="nav-item"><a href="./vacina.html" class="nav-link active">VACINA</a></li>
+                <li class="nav-item">
+                    <a href="./galeria.html" class="nav-link">GALERIA</a>
+                </li>
+                <li class="nav-item"><a href="./contatos.html" class="nav-link ">CONTATO</a></li>
+            </ul>
         </header>
         <h3 class="ms-2 texto_principal">GRÁVIDAS E CRIANÇAS:</h3>
         <!---Carrousel-->
         <div class="col-12 col-xl-12 slider">
-         <div id="incov" class="carousel slide" data-bs-ride="carousel">
-             <div class="carousel-indicators">
-                 <button type="button" data-bs-target="#cafeb" data-bs-slide-to="0" class="active slide-button" aria-current="true" aria-label="Slide 1"></button>
-                 <button type="button" data-bs-target="#cafeb" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
-   
-             </div>
-             <div class="carousel-inner center-block">
-                 <div class="carousel-item active">
-                     <img src="../_components/img/gra.jpg" class="d-block w-100" alt="..." height="430px;">
-                 </div>
-                 <div class="carousel-item">
-                     <img  src="../_components/img/cri.jpg"  class="d-block w-100" alt="..." height="430px;">
-                 </div>
- 
-             </div>
-             <button class="carousel-control-prev" type="button" data-bs-target="#incov" data-bs-slide="prev">
+            <div id="incov" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cafeb" data-bs-slide-to="0" class="active slide-button" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#cafeb" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
+
+                </div>
+                <div class="carousel-inner center-block">
+                    <div class="carousel-item active">
+                        <img src="../_components/img/gra.jpg" class="d-block w-100" alt="..." height="430px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../_components/img/cri.jpg" class="d-block w-100" alt="..." height="430px;">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#incov" data-bs-slide="prev">
                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                  <span class="visually-hidden">Previous</span>
              </button>
-             <button class="carousel-control-next" type="button" data-bs-target="#incov" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#incov" data-bs-slide="next">
                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                  <span class="visually-hidden">Next</span>
              </button>
-         </div>
-     </div>
-     <H4 class="mt-3">GRÁVIDAS:</H4>
-        <h6 >GRÁVIDAS PODERÃO EM ALGUM MOMENTO TOMAR A VACINA CONTRA O COVID-19?</h6>
-        <p>Está suspensa a vacinação de grávidas e puérperas SEM COMORBIDADES com qualquer
-          vacina contra covid-19. No entanto, aquelas que têm algum problema de saúde devem ser
-          imunizadas com doses da Coronavac ou Pfizer. Está suspensa temporariamente a
-          vacinação das gestantes e puérperas com a vacina Astrazeneca/Fiocruz.</p>
-    
-    
-         <h6> NO DESENVOLVIMENTO DA VACINA, FORAM FEITOS TESTES PARA GRÁVIDAS?</h6>
-   <P>Grávidas não foram testadas no desenvolvimento das vacinas pois, normalmente, são
-    testadas em etapas posteriores, quando outros grupos já tiveram sua segurança e eficácia
-    comprovados.</P>
+            </div>
+        </div>
+        <h2 class="mt-3">GRÁVIDAS:</h2>
+        <div class="fui">
+            <h5>GRÁVIDAS PODERÃO EM ALGUM MOMENTO TOMAR A VACINA CONTRA O COVID-19?</h5>
+            <p>Está suspensa a vacinação de grávidas e puérperas SEM COMORBIDADES com qualquer vacina contra covid-19. No entanto, aquelas que têm algum problema de saúde devem ser imunizadas com doses da Coronavac ou Pfizer. Está suspensa temporariamente
+                a vacinação das gestantes e puérperas com a vacina Astrazeneca/Fiocruz.</p>
 
-           <H6>QUAL A SEGURANÇA DE APLICAR VACINA EM GRAVIDAS SE TESTES NÃO FORAM FEITOS?</H6>
-           <P>Ainda que a segurança e eficácia das vacinas COVID-19 não tenham sido avaliadas neste
-            grupo, ressalta-se que as vacinas de plataformas de vírus inativado já são utilizadas por
-            esse grupo de mulheres no Calendário Nacional de Vacinação, e um levantamento de
-            evidências sobre recomendações nacionais e internacionais de vacinação com vacinas
-            COVID-19 de gestantes, puérperas e lactantes em sua maioria defende a vacinação das
-            mulheres nessas condições, se pertencentes a algum grupo prioritário.
+
+            <h5> NO DESENVOLVIMENTO DA VACINA, FORAM FEITOS TESTES PARA GRÁVIDAS?</h5>
+            <P>Grávidas não foram testadas no desenvolvimento das vacinas pois, normalmente, são testadas em etapas posteriores, quando outros grupos já tiveram sua segurança e eficácia comprovados.
             </P>
-            <p>Considerando ainda
-              o momento pandêmico atual no Brasil com elevada circulação do SARS-CoV-2, o Programa
-              Nacional de Imunizações, diante das avaliações do risco X benefício, subsidiado pelas
-              discussões na Câmara Técnica Assessora em Imunização e Doenças Transmissíveis e
-              Câmara Técnica Assessora em ações integradas a Assistência à Gestante e Puérpera no
-              contexto do coronavírus (covid-19), decidiu por recomendar a vacinação contra a covid-19
-              de todas as gestantes e puérperas.</p>
 
-              <H4 class="mt-3">CRIANÇAS:</H4>
-              <center><img src="../_components/img/crianca.png" alt="" style="height: 430px;width:1080px;"class="img-fluid"></center>
-              <h6 >A VACINAÇÃO DE CRIANÇAS CONTRA A COVID-19 É OBRIGATÓRIA?</h6>
-              <p>Não. A inclusão das crianças no Plano Nacional de Operacionalização da Vacinação contra
-                a Covid-19 (PNO) ocorreu após amplo debate com a sociedade civil, especialistas,
-                representantes de sociedades científicas e das mais diversas entidades públicas. As
-                discussões chegaram ao consenso de que a vacinação não deveria ser compulsória. A
-                recomendação está na Nota Técnica nº 2/2022, elaborada pela Secretaria Extraordinária de
-                Enfrentamento à Covid-19 (Secovid).
-                </p>
-                <H6>PRECISO DE PRESCRIÇÃO MÉDICA PARA VACINAR MEU FILHO CONTRA A DOENÇA?</H6>
-          <P>Não é necessário apresentar prescrição ou receita médica no ato da vacinação. O Ministério
-            da Saúde aconselha que, em caso de dúvidas, os pais ou responsáveis consultem um
-            médico para orientá-los sobre a imunização dos pequenos.
+            <h5>QUAL A SEGURANÇA DE APLICAR VACINA EM GRAVIDAS SE TESTES NÃO FORAM FEITOS?</h5>
+            <P>Ainda que a segurança e eficácia das vacinas COVID-19 não tenham sido avaliadas neste grupo, ressalta-se que as vacinas de plataformas de vírus inativado já são utilizadas por esse grupo de mulheres no Calendário Nacional de Vacinação, e um
+                levantamento de evidências sobre recomendações nacionais e internacionais de vacinação com vacinas COVID-19 de gestantes, puérperas e lactantes em sua maioria defende a vacinação das mulheres nessas condições, se pertencentes a algum grupo
+                prioritário.
             </P>
-       <H6>AS CRIANÇAS PODEM SER VACINADAS SEM A PRESENÇA DOS PAIS E RESPONSÁVEIS?</H6>
-        <P>Sim, desde que seja apresentado um termo de autorização dos pais ou responsáveis por
-    escrito. No caso da presença dos responsáveis no ato da imunização, é dispensada a
-    autorização.</P>
-        <h6>QUAIS SãO AS VACINAS APROVADAS PARA ESSE PÚBLICO? ELAS SÃO SEGURAS?</h6>
-<P>Há dois imunizantes aprovados pela Agência Nacional de Vigilância Sanitária (Anvisa) para
-  a vacinação do público infantil: a vacina da Pfizer, que já tem registro definitivo na agência
-  reguladora e pode ser aplicada em crianças de 5 a 11 anos; e a vacina Coronavac,
-  aprovada para uso emergencial, destinada a crianças acima de 6 anos, com a orientação de
-  que não seja aplicada em imunocomprometidos. O Ministério da Saúde ressalta que todas
-  as vacinas adotadas no PNO são seguras e eficazes contra a Covid-19.
-  </P>
-  <H6>QUANTAS DOSE A CRIANÇA PRECISA PARA ESTAR COMPLETAMENTE VACINADA?</H6>
-<P>Assim como ocorre em adultos, o esquema vacinal de crianças e adolescentes é composto
-  por duas doses. A decisão foi tomada com base em evidências científicas. A Anvisa
-  concluiu que as vacinas Pfizer-BioNTech e Coronavac, quando administradas no esquema
-  de duas doses, são seguras e eficazes na prevenção da doença.
-  </P>
-  <H6>COMO DEVE SER FEITA A VACINAÇÃO DE CRIANÇAS?</H6>
-<P>Segundo a recomendação da Anvisa, as crianças devem ser vacinadas em ambiente
-  exclusivo, diferente do que é usado para a vacinação do público acima de 12 anos e
-  também diferente do ambiente que é usado para aplicar outras vacinas, ainda que
-  pediátricas. As crianças precisam ser recebidas em um ambiente acolhedor e seguro. </P>
-  <P>Vale lembrar que as crianças precisam permaneçam no local por 20 minutos após a vacinação
-    para que sejam observados possíveis efeitos adversos. A orientação é que seja evitada a
-    vacinação desse público na modalidade drive-thru. Nas aldeias indígenas, a vacinação dos
-    pequenos é feita nos dias em que os adultos não são vacinados.</P>
-<H6>A VACINA PARA CRIANÇAS É A MESMA APLICADA EM ADULTOS?QUAL A DIFERENÇA?</H6>
-<P>A vacina Coronavac aplicada em crianças é a mesma aplicada em adultos. Já o imunizante
-  da Pfizer tem características que diferenciam um tipo do outro. O Ministério da Saúde já
-  explicou as diferenças entre o imunizante pediátrico do adulto. Entre as principais
-  diferenças estão a cor do frasco e a dosagem administrada.</P>
-  <P>. Enquanto o frasco do
-    imunizante da Pfizer aplicado em adultos tem tampa de cor roxa, a ampola da vacina infantil
-    é laranja. Além disso, a dose aplicada na população acima de 12 anos é composta de 30
-    microgramas, enquanto a dose pediátrica contém 10 microgramas do imunizante.Meu filho
-    tomou a primeira dose.
-    </P>
-<H6>QUANTO TEMPO DEPOIS ELE PRECISA TOMAR A SEGUNDA DOSE?</H6>
-<P>Crianças que tomaram a vacina da Pfizer devem retornar ao posto de vacinação para
-  receber a segunda dose oito semanas (cerca de dois meses) depois de tomar a primeira. Já
-  para crianças que receberam o imunizante Coronavac, o intervalo entre uma dose e outra é
-  de 28 dias.</P>
-  <H6>VAI SER PRECISO APLICAR UMA DOSE DE REFORÇO NAS CRIANÇAS?</H6>
-<P>Não há estudos científicos que apontem a necessidade de uma dose de reforço no público
-  infantil. Dessa forma, o PNO orienta que sejam aplicadas as duas doses na faixa etária de 5
-  a 11 anos.Minha filha vai completar 5 anos em 2022.</P>
-  <H6>ELAS JÁ PODEM TOMAR A VACINA CONTRA COVID-19?</H6>
-  <P>Crianças com cinco anos completos podem se vacinar. Não há vacinas aprovadas pela
-    Anvisa para o público menor que cinco anos no Brasil.Meu filho tomou vacina recentemente
-    contra outra doença.</P>
-    <H6>PODE TOMAR JUNTO COM A VACINA CONTRA COVID-19?</H6>
-    <P>A Anvisa não recomenda a aplicação de diferentes vacinas de forma concomitante, ou seja,
-      ao mesmo tempo em que se aplicam as vacinas do calendário de vacinação infantil. A
-      orientação é que os pais ou responsáveis aguardem 15 dias para retornar ao posto.Quero
-      vacinar meu filho contra a Covid-19.</P>
-      <P>As vacinas são gratuitas estão disponíveis nas Unidades Básicas de Saúde e nos postos de
-        vacinação espalhados por todo o Brasil. Acompanhe o calendário da sua cidade para saber
-        horários de funcionamento e o ponto mais próximo da sua casa. Para a imunização, basta
-        apresentar um documento de identificação e a Caderneta de Vacina da Criança. Na
-        ausência dos pais ou responsáveis, é necessária a autorização por escrito.</P>
-    <H6>VAI TER VACINA SUFICIENTE PARA TODAS AS CRIANÇAS?</H6>
-<P>O Governo Federal, por meio do Ministério da Saúde, adquiriu o quantitativo suficiente de
-  vacinas para imunizar as mais de 20,4 milhões de crianças brasileiras. Pais e responsáveis
-  que queiram vacinar seus filhos podem ficar tranquilos de que não faltará vacina.</P>
+            <p>Considerando ainda o momento pandêmico atual no Brasil com elevada circulação do SARS-CoV-2, o Programa Nacional de Imunizações, diante das avaliações do risco X benefício, subsidiado pelas discussões na Câmara Técnica Assessora em Imunização
+                e Doenças Transmissíveis e Câmara Técnica Assessora em ações integradas a Assistência à Gestante e Puérpera no contexto do coronavírus (covid-19), decidiu por recomendar a vacinação contra a covid-19 de todas as gestantes e puérperas.</p>
+
+            <h2 class="mt-3">CRIANÇAS:</h2>
+            <center><img src="../_components/img/crianca.png" alt="" style="height: 430px;width:1080px;" class="img-fluid"></center>
+            <h5>A VACINAÇÃO DE CRIANÇAS CONTRA A COVID-19 É OBRIGATÓRIA?</h5>
+            <p>Não. A inclusão das crianças no Plano Nacional de Operacionalização da Vacinação contra a Covid-19 (PNO) ocorreu após amplo debate com a sociedade civil, especialistas, representantes de sociedades científicas e das mais diversas entidades
+                públicas. As discussões chegaram ao consenso de que a vacinação não deveria ser compulsória. A recomendação está na Nota Técnica nº 2/2022, elaborada pela Secretaria Extraordinária de Enfrentamento à Covid-19 (Secovid).
+            </p>
+            <h5>PRECISO DE PRESCRIÇÃO MÉDICA PARA VACINAR MEU FILHO CONTRA A DOENÇA?</h5>
+            <P>Não é necessário apresentar prescrição ou receita médica no ato da vacinação. O Ministério da Saúde aconselha que, em caso de dúvidas, os pais ou responsáveis consultem um médico para orientá-los sobre a imunização dos pequenos.
+            </P>
+            <h5>AS CRIANÇAS PODEM SER VACINADAS SEM A PRESENÇA DOS PAIS E RESPONSÁVEIS?</h5>
+            <P>Sim, desde que seja apresentado um termo de autorização dos pais ou responsáveis por escrito. No caso da presença dos responsáveis no ato da imunização, é dispensada a autorização.
+            </P>
+            <h5>QUAIS SÃO AS VACINAS APROVADAS PARA ESSE PÚBLICO? ELAS SÃO SEGURAS?</h5>
+            <P>Há dois imunizantes aprovados pela Agência Nacional de Vigilância Sanitária (Anvisa) para a vacinação do público infantil: a vacina da Pfizer, que já tem registro definitivo na agência reguladora e pode ser aplicada em crianças de 5 a 11 anos;
+                e a vacina Coronavac, aprovada para uso emergencial, destinada a crianças acima de 6 anos, com a orientação de que não seja aplicada em imunocomprometidos. O Ministério da Saúde ressalta que todas as vacinas adotadas no PNO são seguras
+                e eficazes contra a Covid-19.
+            </P>
+            <h5>QUANTAS DOSE A CRIANÇA PRECISA PARA ESTAR COMPLETAMENTE VACINADA?</h5>
+            <P>Assim como ocorre em adultos, o esquema vacinal de crianças e adolescentes é composto por duas doses. A decisão foi tomada com base em evidências científicas. A Anvisa concluiu que as vacinas Pfizer-BioNTech e Coronavac, quando administradas
+                no esquema de duas doses, são seguras e eficazes na prevenção da doença.
+            </P>
+            <h5>COMO DEVE SER FEITA A VACINAÇÃO DE CRIANÇAS?</h5>
+            <P>Segundo a recomendação da Anvisa, as crianças devem ser vacinadas em ambiente exclusivo, diferente do que é usado para a vacinação do público acima de 12 anos e também diferente do ambiente que é usado para aplicar outras vacinas, ainda que
+                pediátricas. As crianças precisam ser recebidas em um ambiente acolhedor e seguro. </P>
+            <P>Vale lembrar que as crianças precisam permaneçam no local por 20 minutos após a vacinação para que sejam observados possíveis efeitos adversos. A orientação é que seja evitada a vacinação desse público na modalidade drive-thru. Nas aldeias
+                indígenas, a vacinação dos pequenos é feita nos dias em que os adultos não são vacinados.</P>
+            <h5>A VACINA PARA CRIANÇAS É A MESMA APLICADA EM ADULTOS?QUAL A DIFERENÇA?</h5>
+            <P>A vacina Coronavac aplicada em crianças é a mesma aplicada em adultos. Já o imunizante da Pfizer tem características que diferenciam um tipo do outro. O Ministério da Saúde já explicou as diferenças entre o imunizante pediátrico do adulto.
+                Entre as principais diferenças estão a cor do frasco e a dosagem administrada.</P>
+            <P> Enquanto o frasco do imunizante da Pfizer aplicado em adultos tem tampa de cor roxa, a ampola da vacina infantil é laranja. Além disso, a dose aplicada na população acima de 12 anos é composta de 30 microgramas, enquanto a dose pediátrica
+                contém 10 microgramas do imunizante.Meu filho tomou a primeira dose.
+            </P>
+            <h5>QUANTO TEMPO DEPOIS ELE PRECISA TOMAR A SEGUNDA DOSE?</h5>
+            <P>Crianças que tomaram a vacina da Pfizer devem retornar ao posto de vacinação para receber a segunda dose oito semanas (cerca de dois meses) depois de tomar a primeira. Já para crianças que receberam o imunizante Coronavac, o intervalo entre
+                uma dose e outra é de 28 dias.</P>
+            <h5>VAI SER PRECISO APLICAR UMA DOSE DE REFORÇO NAS CRIANÇAS?</h5>
+            <P>Não há estudos científicos que apontem a necessidade de uma dose de reforço no público infantil. Dessa forma, o PNO orienta que sejam aplicadas as duas doses na faixa etária de 5 a 11 anos.Minha filha vai completar 5 anos em 2022.</P>
+            <h5>ELAS JÁ PODEM TOMAR A VACINA CONTRA COVID-19?</h5>
+            <P>Crianças com cinco anos completos podem se vacinar. Não há vacinas aprovadas pela Anvisa para o público menor que cinco anos no Brasil.Meu filho tomou vacina recentemente contra outra doença.</P>
+            <h5>PODE TOMAR JUNTO COM A VACINA CONTRA COVID-19?</h5>
+            <P>A Anvisa não recomenda a aplicação de diferentes vacinas de forma concomitante, ou seja, ao mesmo tempo em que se aplicam as vacinas do calendário de vacinação infantil. A orientação é que os pais ou responsáveis aguardem 15 dias para retornar
+                ao posto.Quero vacinar meu filho contra a Covid-19.</P>
+            <P>As vacinas são gratuitas estão disponíveis nas Unidades Básicas de Saúde e nos postos de vacinação espalhados por todo o Brasil. Acompanhe o calendário da sua cidade para saber horários de funcionamento e o ponto mais próximo da sua casa.
+                Para a imunização, basta apresentar um documento de identificação e a Caderneta de Vacina da Criança. Na ausência dos pais ou responsáveis, é necessária a autorização por escrito.</P>
+            <h5>VAI TER VACINA SUFICIENTE PARA TODAS AS CRIANÇAS?</h5>
+            <P>O Governo Federal, por meio do Ministério da Saúde, adquiriu o quantitativo suficiente de vacinas para imunizar as mais de 20,4 milhões de crianças brasileiras. Pais e responsáveis que queiram vacinar seus filhos podem ficar tranquilos de
+                que não faltará vacina.</P>
+
+
+        </div>
 
 
 
@@ -178,80 +144,62 @@
 
 
 
-
-
-                  <div class="album py-5 bg-light">
-                    <div class="container">
-                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                          <div class="card" style="width: 18rem;">
-                            <img
-                            class="card-img" style="height: 160px; ;"
-                            src="../_components/img/vacina-shingrix.jpg"
-                            alt="Card image"
-                          />
-                            <div class="card-body">
-                              <p class="card-text"><h5 class="card-title">VACINA:
-                              </h5>
-                              <p class="card-text">
-                                As vacinas atuam na prevenção, induzindo a criação de anticorpos por parte do sistema imunológico. 
-                              </p></p>
-                              <a href="./vacina.html" class="btn btn-primary">Visitar</a>
-                            </div>
-                          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="../_components/img/vacina-shingrix.jpg" alt="Card image" class="card-img-top img-fluid height" style="height: 200px;object-fit: cover;" />
+                        <div class=" card-body d-flex flex-column ">
+                            <h5 class="card-title ">VACINA:</h5>
+                            <p class="card-text flex-grow-1 " style="text-align: justify; ">
+                                As vacinas atuam na prevenção, induzindo a criação de anticorpos por parte do sistema imunológico.
+                            </p>
+                            <a href="./vacina.html " class="btn btn-primary mt-auto ">Visitar</a>
                         </div>
-
-                        <div class="col">
-                          <div class="card" style="width: 18rem;">
-                            <img
-                            class="card-img"
-                            src="../_components/img/reinfeccao-covid-960x540.jpg"
-                            alt="Card image"
-                          />
-                            <div class="card-body">
-                              <p class="card-text"><h5 class="card-title">REINFECÇÃO:
-                              </h5>
-                              <p class="card-text">
-                                Pessoas que contraíram a Covid-19 na primeira fase da epidemia têm risco de
-                                contrair novamente?
-                              </p></p>
-                              <a href="./reifeccao.html" class="btn btn-primary">Visitar</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card" style="width: 18rem;">
-                            <img
-                              class="card-img"
-                              src="../_components/img/e-por-isso-que-mudei-de-ideia--20201012082025.jpg"
-                              alt="Card image"
-                            />
-                            <div class="card-body">
-                              <p class="card-text"><h6 class="card-title">VACINA DA GRIPE X VACINA DO COVID:
-                              </h6>
-                              <p class="card-text">
-                                É preciso dar um intervalo entre a vacina de gripe e a vacina contra Covid-19?
-                              </p></p>
-                              <a href="./vacinagr.html" class="btn btn-primary">Visitar</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="text-muted">© CEEP ISAIAS ALVES, Brasil- BA</span>
-          </div>
-        </footer>
-      </div> 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3 ">
+                    <div class="card h-100 ">
+                        <img src="../_components/img/reinfeccao-covid-960x540.jpg " alt="Card image " class="card-img-top img-fluid" style="height: 200px;object-fit: cover;" />
+                        <div class="card-body d-flex flex-column ">
+                            <h5 class="card-title ">REINFECÇÃO:</h5>
+                            <p class="card-text flex-grow-1 " style="text-align: justify; ">
+                                Pessoas que contraíram a Covid-19 na primeira fase da epidemia têm risco de contrair novamente?
+                            </p>
+                            <a href="./reifeccao.html " class="btn btn-primary mt-auto ">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3 ">
+                    <div class="card h-100 ">
+                        <img src="../_components/img/e-por-isso-que-mudei-de-ideia--20201012082025.jpg" alt="Card image " class="card-img-top img-fluid" style="height: 200px;object-fit: cover;" />
+                        <div class="card-body d-flex flex-column ">
+                            <h5 class="card-title ">VACINA DA GRIPE X VACINA DO COVID:</h5>
+                            <p class="card-text flex-grow-1 " style="text-align: justify; ">
+                                É preciso dar um intervalo entre a vacina de gripe e a vacina contra Covid-19?
+                            </p>
+                            <a href="./vacinagr.html" class="btn btn-primary mt-auto ">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <span class="text-muted">© CEEP ISAIAS ALVES, Brasil- BA</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
